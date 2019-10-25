@@ -331,8 +331,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/24/categories/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -472,13 +479,16 @@
       
         
           
-            <h1 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h1><p>[TOC]</p>
-<h2 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h2><h3 id="python中变量、对象和内存模型的理解"><a href="#python中变量、对象和内存模型的理解" class="headerlink" title="python中变量、对象和内存模型的理解"></a>python中变量、对象和内存模型的理解</h3><p>python中的变量相对于C语言中的指针，本质是指向的内存中的一个地址中的值，但该指针为只读指针，不能修改指向地址的值，如果要改变该地址的值，则需要重新申请一块内存并赋值，将该变量的指向地址修改为重新申请内存的地址。python中的对象是在内存中存放的按照不同规则组织的数据，变量即是对该数据数据的一个引用。python中的内存模型</p>
-<h3 id="python中的函数是第一类对象"><a href="#python中的函数是第一类对象" class="headerlink" title="python中的函数是第一类对象"></a>python中的函数是第一类对象</h3><p>第一类对象指<strong>可以在执行期间被创造并作为参数传入给其他函数或存入一个变量的实体</strong>。python中的函数可以作为<strong>参数传递、函数返回值、可以存入一个变量中</strong>，而且，<strong>python中一切皆对象，函数名是对函数对象的引用</strong>。</p>
-<h3 id="可变对象和不可变对象"><a href="#可变对象和不可变对象" class="headerlink" title="可变对象和不可变对象"></a>可变对象和不可变对象</h3><p>可变对象指内存中对象是可修改的，不可变对象反之。这两个概念是针对于对象而不是变量，变量可视为内存中对象的引用。python中的可变对象为list,set,dict; 不可变对象为strings,tuples,numbers。注意在函数中参数传递的情况，实参为不可变对象，在函数内部修改该变量的值，只会让函数内部的局部变量地址改变，并不会改变外部变量指向地址，所以不会改变外部变量的值；实参为可变对象则相反。函数的默认参数一定要设置为不可变对象，否则可能导致严重的<a href="https://blog.csdn.net/qq_33528613/article/details/72859304" target="_blank" rel="noopener">问题</a>。</p>
-<h3 id="赋值、浅拷贝、深拷贝"><a href="#赋值、浅拷贝、深拷贝" class="headerlink" title="赋值、浅拷贝、深拷贝"></a>赋值、浅拷贝、深拷贝</h3><p>赋值即引用，两个变量拥有共同的地址，改变任意变量的值，内存中的对象也发生改变。</p>
-
-          
+          Python基础[TOC]
+第一部分python中变量、对象和内存模型的理解python中的变量相对于C语言中的指针，本质是指向的内存中的一个地址中的值，但该指针为只读指针，不能修改指向地址的值，如果要改变该地址的值，则需要重新申请一块内存并赋值，将该变量的指向地址修改为重新申请内存的地址。pyth
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/24/P1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -596,8 +606,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/23/test-site/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -715,21 +732,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/23/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
